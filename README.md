@@ -2,8 +2,7 @@
 ```markdown
 # ICMP C2 Command and Control System
 
-This repository contains a proof-of-concept (PoC) ICMP-based Command and Control (C2) system for covert communication and remote command execution. The system consists of two main components: the ICMP C2 Command Server and the ICMP C2 Listener. Note that the attacker must know the IP address of the remote machine to establish communication.
-
+This repository contains a proof-of-concept (PoC) ICMP-based Command and Control (C2) system
 ## Features
 
 - **ICMP-based Communication**: Utilizes ICMP echo requests and replies for command transmission and response reception.
