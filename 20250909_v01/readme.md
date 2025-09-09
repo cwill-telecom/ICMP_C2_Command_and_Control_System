@@ -56,13 +56,9 @@ python3 icmp_command_server.py -i eth0 -d 192.168.1.100 --encoding base64 --chun
 - `help`: Show this help message.
 - `<any command>`: Execute the specified command on the target.
 
-## Security Implications
 
-This C2 system can be used for covert communication and remote command execution, making it useful for penetration testing and red team operations. However, it can also be used maliciously to control compromised systems without detection by traditional security measures.
 
-## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
 
