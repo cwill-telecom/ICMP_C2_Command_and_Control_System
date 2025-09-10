@@ -66,8 +66,20 @@ python3 icmp_command_server.py -i [INTERFACE] -d [TARGET_IP] [OPTIONS]
 # On target machine
 python3 icmp_listener.py -i eth0
 
+# With encryption and specific ICMP ID
+python3 icmp_listener.py -i eth0 --icmp-id 13170 --encrypt --key your_encryption_key
+
+# With compression and hex encoding
+python3 icmp_listener.py -i eth0 --compress --encoding hex
+
 # On C2 server
 python3 icmp_command_server.py -i eth0 -d 192.168.1.100
+
+# With specific TTL
+python3 icmp_command_server.py -i eth0 -d 192.168.1.100 --ttl 128 
+
+# With base64 encoding and chunk size
+python3 icmp_command_server.py -i eth0 -d 192.168.1.100 --encoding base64 --chunk-size 300
 ```
 
 ### With Encryption
@@ -110,6 +122,9 @@ python3 icmp_command_server.py -i eth0 -d 192.168.1.100 --encoding base64 --comp
 - Requires root/administrator privileges to send/receive raw packets
 - Performance is limited by the IC packet size and network conditions
 - Not suitable for large file transfers due to packet size constraints
+
+
+```
 
 ## Disclaimer
 
