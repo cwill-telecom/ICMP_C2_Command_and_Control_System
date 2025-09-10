@@ -161,6 +161,4 @@ The author assumes no liability for misuse. Always ensure you have explicit perm
 ---
 
 ```
-
-Do you want me to also add a **"Quick Start Demo" section** where I show server + listener running together in a simulated session (command sent → response received), so the README looks like a tutorial?
 ```
